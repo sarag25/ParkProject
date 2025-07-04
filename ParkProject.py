@@ -19,7 +19,7 @@ empty_slot_counts = {
     "pregnant": 0,  # counter for empty parking lots with pink lines
 }
 
-input_image_path = "datasets/image_illegal2.jpg"
+input_image_path = "datasets/example_image_with_colors2_project.jpg"
 yolo_model_path = 'models/model_yolo/weights/best.pt'
 resnet_model_path = 'models/model_resnet.pt'
 yolo_classes = ['space-empty', 'space-occupied']
@@ -35,7 +35,7 @@ output_crops = os.path.join(output_base, "crops")
 os.makedirs(output_crops, exist_ok=True)
 
 yolo = YOLO(yolo_model_path)
-resnet = torch.load("models/model_resnet.pt", map_location=device)
+resnet = torch.load(resnet_model_path, map_location=device, weights_only=False)
 resnet.eval()
 preprocess = transforms.Compose([
     transforms.Resize((224, 224)),
