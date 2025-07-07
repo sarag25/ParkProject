@@ -8,7 +8,7 @@ Full paper of this project available here:
 
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/b54833a5-92c1-4c41-bc12-0a0400550a12" width="500">
+  ![Project Flow ](https://github.com/user-attachments/assets/9c3a7c16-429b-4965-af89-4e26f267624c)
 </p>
 <p align="center"> <i>Pipeline</i> </p>
 
