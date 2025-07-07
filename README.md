@@ -14,14 +14,14 @@ Full paper of this project available here:
 
 ### How to execute the pipeline
 The datasets are not available on this repository but are downloadable here: https://drive.google.com/drive/folders/1RHxNd7ZpMgi6An2oUwFgzz-q7toDPgbm?usp=drive_link
+The models used can be found into the project 'models' folder.
 
 The 'ParkProject.py' file can be used to try the full pipeline on a single image; example images can be found in the 'datasets' folder. The outputs generated will be saved in the 'results' folder.
 
-In the pipeline, the files are executed in the following order:
+Files structure:
 <ul>
-  <li>
-    'preprocessing'
-  </li>
-  <li>Tea</li>
-  <li>Milk</li>
+  <li>'preprocessing': inside this folder there are the files to apply filtering to the datasets used to train the models and to input images in general.</li>
+  <li>'object_detection_and_classification': this contains the methods used to detect bounding boxes and classify each spot as empty/occupied. The output of the YOLO model is collected in the 'runs' subdirectory. It's also included the file that crops the single parking slots after detection.</li>
+  <li>'classification_occupied_spots': this directory contains the files related to the ResNet model training and execution.</li>
+  <li>'classification_empty_spots': it collects the methods proposed to classify empty parking slots according to the color of their lines.</li>
 </ul>
