@@ -19,7 +19,7 @@ empty_slot_counts = {
     "pregnant": 0,  # counter for empty parking lots with pink lines
 }
 
-input_image_path = "datasets/example_image_with_colors2_project.jpg"
+input_image_path = "datasets/example_image_project.jpg"
 yolo_model_path = 'models/model_yolo/weights/best.pt'
 resnet_model_path = 'models/model_resnet.pt'
 yolo_classes = ['space-empty', 'space-occupied']
@@ -27,7 +27,7 @@ resnet_classes = ['Illegal-parking', 'Slot-occupied']
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-output_base = f"final_result_{timestamp}"
+output_base = f"results/final_result_{timestamp}"
 os.makedirs(output_base, exist_ok=True)
 
 output_annotated = os.path.join(output_base, "yolo_output.jpg")
