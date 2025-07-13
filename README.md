@@ -31,8 +31,8 @@ Output using some of the example images (original image -> YOLO output -> illega
 
 <p align='center'>
 <img src="https://github.com/user-attachments/assets/b94a2ebd-8360-428c-b609-05e59e60eeda" width='200'>
-<img src="https://github.com/user-attachments/assets/f405f79b-205b-4588-9987-d67bef3a5f9e" width='200'>
 <img src="https://github.com/user-attachments/assets/476ad931-7f78-4a47-8e57-6e5822d5e6d6" width='200'>
+<img src="https://github.com/user-attachments/assets/f405f79b-205b-4588-9987-d67bef3a5f9e" width='200'>
 <img src="https://github.com/user-attachments/assets/3549826d-17d2-49ba-ae88-5084cc59a1d1" width='300'>
 </p>
 
